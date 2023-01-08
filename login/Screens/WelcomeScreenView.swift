@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct WelcomeScreenView: View {
+    
     var body: some View {
+        
         NavigationView {
             ZStack {
-                Color("BgColor").edgesIgnoringSafeArea(.all)
+                Color("PrimaryColor").edgesIgnoringSafeArea(.all)
                 VStack {
                     Spacer()
                     Image(uiImage: #imageLiteral(resourceName: "onboard"))
                     Spacer()
-                    PrimaryButton(title: "Get Started")
+                    PrimaryButton(title: "Tukusanyukidde")
+                        
                     
                     NavigationLink(
                         destination: SignInScreenView().navigationBarHidden(true),
@@ -36,7 +39,7 @@ struct WelcomeScreenView: View {
                     
                     HStack {
                         Text("New around here? ")
-                        Text("Sign in")
+                        Text("Sign up")
                             .foregroundColor(Color("PrimaryColor"))
                     }
                 }
